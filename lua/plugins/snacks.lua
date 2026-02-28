@@ -5,9 +5,10 @@ return {
     lazy = false,
     opts = {
       picker = { enabled = true },
-      explorer = { enabled = false },  -- Using neo-tree instead
-      indent = { enabled = true },
-      notifier = { enabled = true },
+      explorer = { enabled = false }, -- Using neo-tree instead
+      indent = { enabled = false },   -- Using indent-blankline instead for more control
+      notifier = { enabled = true, style = "compact" }, -- compact notifications
+      scroll = { enabled = false },   -- Disable snacks smooth scrolling (it can be jittery)
     },
     keys = {
       { "<leader><space>", function() Snacks.picker.files() end, desc = "Find Files" },
