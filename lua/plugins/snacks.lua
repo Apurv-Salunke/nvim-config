@@ -13,6 +13,9 @@ return {
       { "<leader><space>", function() Snacks.picker.files() end, desc = "Find Files" },
       { "<leader>fg", function() Snacks.picker.grep() end, desc = "Grep" },
       { "<leader>fb", function() Snacks.picker.buffers() end, desc = "Buffers" },
+      -- Disable default explorer mappings from LazyVim
+      { "<leader>e", false },
+      { "<leader>E", false },
     },
   },
 }
